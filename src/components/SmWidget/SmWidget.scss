@@ -1,0 +1,49 @@
+@import "../../global.scss";
+
+.smWidget {
+  flex: 1;
+  -webkit-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+  padding: 20px;
+  margin-right: 20px;
+  h1 {
+    font-size: 26px;
+  }
+  ul {
+    list-style: none;
+    margin-top: 20px;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+      img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .text {
+        margin-left: -65px;
+        h4 {
+          font-size: 18px;
+          font-weight: 600;
+        }
+        p {
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 12px;
+        border: none;
+        background-color: $mainColor;
+        cursor: pointer;
+        gap: 7px;
+      }
+    }
+  }
+}

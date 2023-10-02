@@ -1,0 +1,136 @@
+@import "../../global.scss";
+.user {
+  flex: 5;
+  padding: 20px;
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      border: none;
+      background-color: teal;
+      padding: 7px 10px;
+      width: 80px;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+  .userContainer {
+    display: flex;
+    margin-top: 20px;
+    .userShow {
+      flex: 1;
+      padding: 20px;
+      -webkit-box-shadow: $boxShadow;
+      box-shadow: $boxShadow;
+      margin-right: 20px;
+      .top {
+        display: flex;
+        align-items: center;
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          .name {
+            font-weight: 600;
+          }
+          .title {
+            font-weight: 300;
+          }
+        }
+      }
+      .bottom {
+        margin-top: 20px;
+        .userTitle {
+          font-weight: 600;
+          color: rgb(175, 170, 170);
+          font-size: 14px;
+        }
+        .info {
+          display: flex;
+          align-items: center;
+          margin: 20px 0px;
+          color: #444;
+          .icon {
+            font-size: 16px;
+          }
+          .infoTitle {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .userUpdate {
+      flex: 2;
+      padding: 20px;
+      -webkit-box-shadow: $boxShadow;
+      box-shadow: $boxShadow;
+      .updateTitle {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      form {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        .updateLeft {
+          .updateItem {
+            display: flex;
+            flex-direction: column;
+            margin-top: 13px;
+            label {
+              margin-bottom: 5px;
+              font-size: 14px;
+            }
+            input {
+              width: 250px;
+              height: 30px;
+              border: none;
+              border-bottom: 1px solid gray;
+              &:focus {
+                outline: none;
+                border-bottom: 2px solid rgb(173, 172, 172);
+              }
+            }
+          }
+        }
+        .updateRight {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .userUpload {
+            display: flex;
+            align-items: center;
+            label {
+              cursor: pointer;
+            }
+            img {
+              width: 100px;
+              height: 100px;
+              border-radius: 10px;
+              object-fit: cover;
+              margin-right: 20px;
+            }
+          }
+          button {
+            border-radius: 8px;
+            border: none;
+            background-color: darkblue;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

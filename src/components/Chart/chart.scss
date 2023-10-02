@@ -1,0 +1,11 @@
+@import "../../global.scss";
+.chart {
+  margin: 20px;
+  padding: 20px 30px;
+  -webkit-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+
+  .chartTitle {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../global.scss";
+.featured {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .featuredItem {
+    margin: 0px 20px;
+    padding: 30px;
+    flex: 1;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-box-shadow: $boxShadow;
+    box-shadow: $boxShadow;
+    .title {
+      font-size: 20px;
+    }
+    .container {
+      margin: 10px 0px;
+      display: flex;
+      align-items: center;
+      .money {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .moneyRate {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        .icon {
+          font-size: 14px;
+          margin-left: 5px;
+          color: green;
+          &.negative {
+            color: red;
+          }
+        }
+      }
+    }
+    .subTitle {
+      font-size: 15px;
+      color: gray;
+    }
+  }
+}
